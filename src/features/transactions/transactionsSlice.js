@@ -11,7 +11,7 @@ import { createSlice } from "@reduxjs/toolkit";
 // TODO: Set initial state to have a balance of 0 and an empty array of transactions.
 
 /** @type {{balance: number, history: Transaction[]}} */
-const initialState = {{balance: 0, history: []}};
+const initialState = { balance: 0, history: [] };
 
 /* TODO
 Add two reducers  to the transactions slice: "deposit" and "transfer".
