@@ -1,6 +1,7 @@
 import { useState } from "react";
+import { useSelector } from "react-redux";
 
-import { transfer } from "./transactionsSlice";
+import { transfer, selectBalance } from "./transactionsSlice";
 import "./transactions.scss";
 
 /**
@@ -8,7 +9,7 @@ import "./transactions.scss";
  */
 export default function Transactions() {
 	// TODO: Get the balance from the Redux store using the useSelector hook
-	const balance = 0;
+	const balance = useSelector(selectBalance);
 
 	const [amountStr, setAmountStr] = useState("0.00");
 	const [recipient, setRecipient] = useState("");
