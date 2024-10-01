@@ -38,7 +38,7 @@ const transactionsSlice = createSlice({
 		transfer: (state, { payload }) => {
 			state.balance -= payload.amount;
 			state.history.push({
-				type: "transfer",
+				type: [`transfer`, payload.recipient].filter((e) => e).join(`/`),
 				amount: payload.amount,
 				balance: state.balance,
 			});
