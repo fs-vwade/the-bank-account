@@ -5,11 +5,11 @@ import "./app.css";
 
 // TODO: Import the Redux store and provide it to this component using <Provider>.
 export default function App() {
-  return (
-    <main>
-      <h1>Bank Account</h1>
-      <Transactions />
-      <TransactionHistory />
-    </main>
-  );
+	return (
+		<main>
+			<h1>Bank Account</h1>
+			<Transactions />
+			<TransactionHistory />
+		</main>
+	);
 }
